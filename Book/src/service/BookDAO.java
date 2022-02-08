@@ -20,8 +20,11 @@ public class BookDAO {
 			// 1. JDBC 드라이버 로딩
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			// 2. Connection 객체 생성
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "hr", "hr"); // Connection 객체를 연결
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "hr", "hr"); 
+			// Connection 객체를 연결
 		} catch (Exception e) {
+			// 왠만하면 catch 구문 안에는 logic을 넣지 않고, 보통 log만 찍는다.
+			// if문과 달리 try 블럭이나 catch블럭 내에 포함된 문장이 하나라고 해서 괄호{}를 생략할 수는 없다.
 			System.out.println(e);
 		}
 	}
@@ -126,5 +129,19 @@ public class BookDAO {
 		}
 		discon();
 		return m;
+	}
+}
+
+class ExceptionEx4 {
+	public static void main(String[] args) {
+		System.out.println(1);
+		System.out.println(2);
+		try {
+			System.out.println(3);
+			System.out.println(4);
+		} catch (Exception e) {
+			System.out.println(5);
+		}
+		System.out.println(6);
 	}
 }

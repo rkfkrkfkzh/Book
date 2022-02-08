@@ -42,14 +42,16 @@ try블럭 내에서 예외가 발생한 경우,
 2. 일치하는 catch블럭을 찾게 되면, 그 catch블럭 내의 문장들을 수행하고 전체 try-catch문을 빠져나가서 그다음 문장을 계속해서 수행합니다. 만약 일치하는 catch블럭을 찾지 못하면, 예외는 처리되지 못합니다.
 
 <img width="429" alt="스크린샷 2022-02-08 오후 5 53 24" src="https://user-images.githubusercontent.com/86057607/152951767-93a4f923-163f-4bef-b2d1-03427f18eea1.png">
-
-실행결과는 세로로 1 2 3 4 5 6
+[실행결과]
+<img width="244" alt="스크린샷 2022-02-08 오후 6 01 22" src="https://user-images.githubusercontent.com/86057607/152953318-485fb6da-1420-4f16-b47f-2a634efa3969.png">
 
 try블럭 내에서 예외가 발생하지 않은 경우,
 
 1. catch블럭을 거치지 않고 전체 try-catch문을 빠져나가서 수행을 계속합니다.
 
 <img width="350" alt="스크린샷 2022-02-08 오후 5 57 11" src="https://user-images.githubusercontent.com/86057607/152952447-661fa339-9030-41e6-b719-872a97bb30d7.png">
+[실행결과]
+<img width="304" alt="스크린샷 2022-02-08 오후 6 00 45" src="https://user-images.githubusercontent.com/86057607/152953300-e8ebe6f7-a453-4cc0-8a16-0db17a7059a3.png">
 
-실행결과는 세로로 1 2 3 6
+
 
